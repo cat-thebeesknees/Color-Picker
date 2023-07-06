@@ -34,14 +34,18 @@ body {
 
 #colors-list {
   display: flex;
-  justify-content: space-evenly;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
 }
 
 #colors-list div {
   height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  margin-top: 40px;
+  width: 300px;
+  border-radius: 1%;
+  margin-top: 0px;
   transition: all 1s ease;
 }
 
@@ -50,6 +54,7 @@ body {
 }
 
 /* colors */
+
 .red {
   background-color: #cf000f;
 }
@@ -74,3 +79,78 @@ body {
 .white {
   background-color: #ffffff;
 }
+.olive {
+  background-color: rgb(204, 213, 174);
+}
+.light-olive {
+  background-color: rgb(233, 237, 201);
+}
+.cream {
+  background-color: rgb(254, 250, 224);
+}
+.warm-beige {
+  background-color: rgb(250, 237, 205);
+}
+.toffee {
+  background-color: rgb(212, 163, 115);
+}
+.plum {
+  background-color: rgb(54, 33, 62);
+}
+.lavender-chalk {
+  background-color: rgb(85, 73, 113);
+}
+.flat-grey {
+  background-color: rgb(99, 118, 141);
+}
+.minty {
+  background-color: rgb(138, 198, 208);
+}
+.perfect-sky {
+  background-color: rgb(184, 243, 255);
+}
+.hello-green {
+  background-color: rgb(4, 231, 98);
+}
+.sunray {
+  background-color: rgb(245, 183, 0);
+}
+.pink-purse {
+  background-color: rgb(220, 0, 115);
+}
+.summer-blue {
+  background-color: rgb(0, 139, 248);
+}
+.neon-green {
+  background-color: rgb(137, 252, 0);
+}
+
+
+h1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-size: 6rem;
+  background: linear-gradient(
+    to right,
+    #ef5350,
+    #f48fb1,
+    #7e57c2,
+    #2196f3,
+    #26c6da,
+    #43a047,
+    #eeff41,
+    #f9a825,
+    #ff5722
+  );
+  -webkit-background-clip: text;
+  background-clip:--a;
+  -webkit-text-fill-color: transparent;
+}
+
