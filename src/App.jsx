@@ -5,17 +5,22 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 
+
 // Write your Color component here
 
 
-const Color = ({ color, setSelectedColor }) => {
-  return (
-  <div 
-  className={color}
-   onClick={() => setSelectedColor(color)}></div>
-  )
 
-};
+const Color =({ color, setSelectedColor }) => {
+
+  return (
+    <div
+      className={color}
+      onClick={() => setSelectedColor(color)}></div>
+  );
+}
+  
+  
+
 
 function App() {
   const [selectedColor, setSelectedColor] = useState("");
@@ -35,7 +40,7 @@ function App() {
       
       <div id="colors-list">
         <h2>Cool</h2> 
-             
+           
         <Color color="plum" setSelectedColor={setSelectedColor} />
         <Color color="lavender-chalk" setSelectedColor={setSelectedColor} />
         <Color color="flat-grey" setSelectedColor={setSelectedColor} />
@@ -63,11 +68,19 @@ function App() {
       </div>
     
       </div>
-      
+  
+
   );
   
   
 }
+Color.propTypes = {
+  color: PropTypes.string.isRequired,
+  setSelectedColor: PropTypes.func.isRequired,
+};
+
+export {Color};
+
 
 
 
